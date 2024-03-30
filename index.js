@@ -14,8 +14,9 @@ const obtenerArboles = async () => {
     
     const res = await client.query('SELECT * FROM arboles;')
 
-    const result = res.rows[0].message;
-
+    debugger;
+    const result = res.rows;
+    
     await client.end()
     
     return result;
