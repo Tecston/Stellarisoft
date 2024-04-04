@@ -11,7 +11,11 @@ formElement.addEventListener ("submit", (event)=> {
    let arboles = {arbol : arbol, latitud : latitud, longitud : longitud, fecha : fecha};
    let arbolesJson =JSON.stringify(arboles);
    //Mandarlos al backend
+
+   fetch(`http://localhost:3000/arboles`, {
+    method : `post`,
+    body : arbolesJson
+   })
    
-   
-   console.log(arbolesJson);
+   fetch(`http://localhost:3000/arboles`).then(x => x.json().then(console.log))
 })
