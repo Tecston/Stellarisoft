@@ -1,22 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto de Arbolados</title>
 </head>
 <body>
-    <h1>Registro de Arbolados</h1>
-    <form>
-        <label for="idRegistro">ID de Registro:</label><br>
-        <input type="text" id="idRegistro" name="idRegistro"><br>
-        <label for="arbol">Árbol:</label><br>
-        <input type="text" id="arbol" name="arbol"><br>
-        <label for="latitud">Latitud:</label><br>
-        <input type="text" id="latitud" name="latitud"><br>
-        <label for="longitud">Longitud:</label><br>
-        <input type="text" id="longitud" name="longitud"><br>
-        <label for="fecha">Fecha:</label><br>
-        <input type="date" id="fecha" name="fecha"><br>
-        <input type="submit" value="Enviar">
+    <h1>Registro de Arboles
+    </h1>
+    <form id="saveArboles">
+        
+        <div>
+            <label for="arbol">Árbol:</label><br>
+            <input type="text" id="arbol" name="arbol"><br>
+        </div>
+        <div>
+            <label for="latitud">Latitud:</label><br>
+            <input type="text" id="latitud" name="latitud"><br>
+        </div>
+        <div>
+            <label for="longitud">Longitud:</label><br>
+            <input type="text" id="longitud" name="longitud"><br>
+        </div>
+        <div>
+            <label for="fecha">Fecha:</label><br>
+            <input type="date" id="fecha" name="fecha"><br>
+        </div>
+        <button> Guardar arbol</button>
     </form>
+    <script src="./script.js"></script>
 </body>
 </html>
+
