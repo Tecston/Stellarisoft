@@ -1,19 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Proyecto de Arbolados</title>
 </head>
 <body>
-    <div>
-        <form id="saveTransaction">
-            
-            <div>
-                <label for = "transacionDescription">Description</label>
-                <input id = "transacionDescription"placeholder="Description">
-            </div>
-        </form>
-    </div>
+    <h1>Registro de Arbolados</h1>
+    <form>
+        <label for="idRegistro">ID de Registro:</label><br>
+        <input type="text" id="idRegistro" name="idRegistro"><br>
+        <label for="arbol">Árbol:</label><br>
+        <input type="text" id="arbol" name="arbol"><br>
+        <label for="latitud">Latitud:</label><br>
+        <input type="text" id="latitud" name="latitud"><br>
+        <label for="longitud">Longitud:</label><br>
+        <input type="text" id="longitud" name="longitud"><br>
+        <label for="fecha">Fecha:</label><br>
+        <input type="date" id="fecha" name="fecha"><br>
+        <input type="submit" value="Enviar">
+    </form>
 </body>
 </html>
