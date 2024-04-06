@@ -31,7 +31,6 @@ app.post(`/arboles`, (req, res) => {
     arbolesArr.push(arboles)
     res.send(JSON.stringify("Guardado"));
     console.log(arbolesArr);
-   // res.send(`Guarde un arbool siiiii`);
 });
 
 // Configura el servidor para escuchar en el puerto especificado
